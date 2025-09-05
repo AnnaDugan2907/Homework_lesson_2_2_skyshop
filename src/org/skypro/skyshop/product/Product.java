@@ -2,6 +2,7 @@ package org.skypro.skyshop.product;
 
 import java.util.Objects;
 
+
 public abstract class Product {
     private final String productName;
 

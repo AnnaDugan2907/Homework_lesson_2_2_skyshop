@@ -1,9 +1,11 @@
 package org.skypro.skyshop;
 
 import org.skypro.skyshop.basket.ProductBasket;
+
 import org.skypro.skyshop.product.DiscountedProduct;
 import org.skypro.skyshop.product.FixPriceProduct;
 import org.skypro.skyshop.product.SimpleProduct;
+
 
 public class App {
     public static void main(String[] args) {
@@ -12,6 +14,7 @@ public class App {
         System.out.println(" ");
 
         //Вывод корзины
+
         productBasket.basketPrinting();
 
         System.out.println(" ");
@@ -40,11 +43,13 @@ public class App {
 
         //Поиск товара в пустой корзине
         productBasket.containsProduct("Хлеб");
+
     }
 
     //Заполнение корзины
     private static ProductBasket getProductBasket() {
         ProductBasket productBasket = new ProductBasket();
+
 
         productBasket.setProduct(new SimpleProduct("Хлеб", 45));
         productBasket.setProduct(new FixPriceProduct("Молоко"));
@@ -53,6 +58,7 @@ public class App {
         productBasket.setProduct(new SimpleProduct("Масло", 155));
 
         productBasket.setProduct(new SimpleProduct("Торт", 565)); //Выводится сообщение "Невозможно добавить продукт"
+
 
         return productBasket;
     }
